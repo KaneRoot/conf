@@ -1,0 +1,783 @@
+# Ce fichier viminfo a été généré par Vim 7.3.
+# Vous pouvez l'éditer, mais soyez prudent.
+
+# 'encoding' dans lequel ce fichier a été écrit
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Dernier motif de recherche  :
+~MSle0~/terminal
+
+# Dernier motif de recherche Substitue  :
+~MSle0&hac
+
+# Dernières chaînes de substitution :
+$karchnu
+
+# Historique ligne de commande (chronologie décroissante) :
+:q
+:w
+:.!!!!
+:q!
+:.!
+:*p
+:set nu on
+:set nu=on
+:set nu
+:e ~/.vimrc
+:'<,'>q
+:e screen
+:.!:q
+:g22
+:%s/hac/karchnu/g
+:%s/hac/karchnu
+:set bg=dark
+:set bg=light
+:set background dark
+:background dark
+:wq
+
+# Historique chaîne de recherche (chronologie décroissante) :
+?/terminal
+?/Key
+? hac
+?/tags
+?/shutdown
+?/FIND
+?/set
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+? hac
+
+# Historique expression (chronologie décroissante) :
+
+# Historique ligne de saisie (chronologie décroissante) :
+
+# Historique ligne de saisie (chronologie décroissante) :
+
+# Registres :
+""1	LINE	0
+	meegregersggesd
+"2	LINE	0
+	xterm*faceName: fixed
+	xterm*faceSize: 18
+"3	LINE	0
+	XTerm*font: -*-clean-*-*-*-*-*-*-*-*-*-*-iso8859-*
+	!UXTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+"4	LINE	0
+	XTerm*font: -*-clean-*-*-*-*-12-*-*-*-*-*-iso8859-*
+	XTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+"5	LINE	0
+	XTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+"6	LINE	0
+	fesrgsrgeg
+"7	LINE	0
+	XTerm*font: -monospace*10
+"8	LINE	0
+	XTerm*fontSize: 10
+"9	LINE	0
+	
+"m	CHAR	0
+	l
+"-	CHAR	0
+	U
+
+# Marques dans le fichier :
+'0  1  0  ~/Atelier/conf/.config/awesome/rc.lua
+'1  12  28  ~/Atelier/conf/.config/awesome/rc.lua
+'2  6  57  ~/Atelier/conf/README
+'3  1  24  ~/.Xdefaults
+'4  9  0  ~/.Xdefaults
+'5  3  20  ~/.xinitrc
+'6  1  0  ~/lawl
+'7  3  0  ~/lawl
+'8  3  21  ~/.Xdefaults
+'9  2  16  ~/.Xdefaults
+
+# Liste de sauts (le plus récent en premier) :
+-'  1  0  ~/Atelier/conf/.config/awesome/rc.lua
+-'  12  28  ~/Atelier/conf/.config/awesome/rc.lua
+-'  6  57  ~/Atelier/conf/README
+-'  1  0  ~/Atelier/conf/README
+-'  1  24  ~/.Xdefaults
+-'  9  0  ~/.Xdefaults
+-'  10  0  ~/.Xdefaults
+-'  3  20  ~/.xinitrc
+-'  1  0  ~/.xinitrc
+-'  1  0  ~/lawl
+-'  3  0  ~/lawl
+-'  3  21  ~/.Xdefaults
+-'  2  16  ~/.Xdefaults
+-'  1  0  ~/.Xauthority
+-'  8  17  ~/.Xdefaults
+-'  16  16  ~/.config/awesome/rc.lua
+-'  1  0  ~/.config/awesome/rc.lua
+-'  1  43  ~/truc
+-'  7  0  ~/.Xdefaults
+-'  11  0  ~/.Xdefaults
+-'  1  0  ~/.Xressources
+-'  5  0  ~/.Xdefaults
+-'  6  0  ~/.Xdefaults
+-'  4  22  ~/.Xdefaults
+-'  15  75  ~/.config/awesome/rc.lua
+-'  1  0  ~/monfichier
+-'  564  0  ~/Atelier/awesome-configs/rc.lua
+-'  1  0  ~/Atelier/awesome-configs/rc.lua
+-'  314  3  ~/install-chroot.sh
+-'  1  0  ~/install-chroot.sh
+-'  81  12  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  1  0  ~/scripts/backup.sh
+-'  1  40  /tmp/crontab.liVXQM
+-'  1  0  ~/.ssh/config
+-'  5  5  ~/.xinitrc
+-'  1  0  /mnt/arch/etc/modprobe.d/modprobe.conf
+-'  61  0  ~/.config/awesome/rc.lua
+-'  18  1  ~/.config/awesome/rc.lua
+-'  8  0  ~/.xsession-errors
+-'  1  0  ~/.xsession-errors
+-'  1  0  /media/home/kane/.function_dtc
+-'  1  0  /media/home/kane/.vimrc
+-'  1  0  ~/.vimrc
+-'  242  0  ~/Téléchargements/install-chroot.sh
+-'  1  0  ~/Téléchargements/install-chroot.sh
+-'  172  31  ~/.config/awesome/rc.lua
+-'  19  0  ~/.config/awesome/rc.lua
+-'  150  18  ~/.config/awesome/rc.lua
+-'  1  0  /etc/motd
+-'  2  0  ~/Atelier/notes/screen
+-'  12  0  ~/Atelier/notes/Astuce
+-'  1  0  ~/Atelier/notes/Astuce
+-'  47  0  ~/.config/awesome/themes/redd/theme
+-'  1  0  ~/.config/awesome/themes/redd/theme
+-'  28  16  ~/.config/awesome/themes/redd/theme
+-'  11  0  ~/.config/awesome/themes/redd/theme
+-'  12  0  ~/.config/awesome/themes/redd/theme
+-'  32  0  ~/.config/awesome/themes/redd/theme
+-'  31  17  ~/.config/awesome/themes/redd/theme
+-'  27  20  ~/.config/awesome/themes/redd/theme
+-'  33  16  ~/.config/awesome/themes/redd/theme
+-'  13  0  ~/.config/awesome/themes/redd/theme
+-'  48  44  ~/.config/awesome/rc.lua
+-'  307  30  ~/.config/awesome/rc.lua
+-'  305  36  ~/.config/awesome/rc.lua
+-'  276  49  ~/.config/awesome/rc.lua
+-'  275  42  ~/.config/awesome/rc.lua
+-'  270  49  ~/.config/awesome/rc.lua
+-'  269  42  ~/.config/awesome/rc.lua
+-'  264  47  ~/.config/awesome/rc.lua
+-'  263  25  ~/.config/awesome/rc.lua
+-'  257  47  ~/.config/awesome/rc.lua
+-'  256  27  ~/.config/awesome/rc.lua
+-'  248  27  ~/.config/awesome/rc.lua
+-'  245  37  ~/.config/awesome/rc.lua
+-'  137  88  ~/.config/awesome/rc.lua
+-'  99  71  ~/.config/awesome/rc.lua
+-'  52  4  ~/.config/awesome/rc.lua
+-'  49  0  ~/.config/awesome/rc.lua
+-'  1  0  /tmp/crontab.e3DgJ0/crontab
+-'  1  0  /tmp/crontab.vRFAA2/crontab
+-'  11  80  ~/scripts/news.2
+-'  1  0  ~/scripts/news.2
+-'  1  0  ~/scripts/news.1
+-'  3  89  ~/scripts/backup.sh
+-'  1  0  /tmp/crontab.bZJZbw/crontab
+-'  1  0  /tmp/crontab.gMgwhI/crontab
+-'  23  0  /tmp/crontab.fmXGdp/crontab
+-'  1  0  /tmp/crontab.fmXGdp/crontab
+-'  11  0  ~/scripts/news.1
+-'  8  31  ~/scripts/news.1
+-'  12  0  ~/scripts/news.1
+-'  18  15  ~/scripts/news.1
+-'  6  0  ~/scripts/news.1
+-'  2  10  ~/scripts/news.1
+-'  11  3  ~/scripts/news
+-'  3  20  ~/.xinitrc
+
+# Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/Atelier/conf/.config/awesome/rc.lua
+	"	1	0
+	^	12	29
+	.	12	28
+	+	12	28
+
+> ~/Atelier/conf/README
+	"	6	57
+	^	6	58
+	.	6	57
+	+	6	57
+
+> ~/.Xdefaults
+	"	1	24
+	^	1	25
+	.	1	24
+	+	3	22
+	+	4	22
+	+	6	5
+	+	6	35
+	+	11	12
+	+	6	0
+	+	5	0
+	+	11	21
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	7	22
+	+	7	22
+	+	11	0
+	+	9	55
+	+	9	5
+	+	9	30
+	+	9	0
+	+	9	0
+	+	1	0
+	+	1	0
+	+	2	18
+	+	1	21
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	18
+	+	8	17
+	+	2	0
+	+	1	0
+	+	1	2
+	+	2	1
+	+	1	13
+	+	2	16
+	+	3	21
+	+	10	0
+	+	10	0
+	+	10	0
+	+	2	0
+	+	1	24
+
+> ~/.xinitrc
+	"	3	20
+	^	3	21
+	.	3	20
+	+	5	5
+	+	3	11
+	+	4	0
+	+	3	20
+
+> ~/lawl
+	"	1	0
+	^	3	0
+	.	3	0
+	+	1	0
+	+	3	0
+
+> ~/.Xauthority
+	"	1	0
+
+> ~/.config/awesome/rc.lua
+	"	16	16
+	^	16	17
+	.	15	17
+	+	15	36
+	+	18	17
+	+	19	35
+	+	172	31
+	+	16	35
+	+	15	17
+
+> ~/truc
+	"	1	43
+	^	1	44
+	.	1	43
+	+	1	43
+
+> ~/.Xressources
+	"	1	0
+
+> ~/monfichier
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Atelier/awesome-configs/rc.lua
+	"	564	0
+	^	49	25
+	.	49	24
+	+	49	24
+
+> ~/install-chroot.sh
+	"	314	3
+
+> ~/.bashrc
+	"	81	12
+	^	81	13
+	.	81	12
+	+	84	39
+	+	83	24
+	+	82	25
+	+	81	12
+
+> ~/scripts/backup.sh
+	"	1	0
+	^	3	90
+	.	3	90
+	+	1	11
+	+	3	90
+
+> /tmp/crontab.liVXQM
+	"	1	40
+	^	1	41
+	.	2	0
+	+	2	0
+
+> ~/.ssh/config
+	"	1	0
+	^	12	13
+	.	12	12
+	+	4	10
+	+	8	10
+	+	12	12
+
+> /mnt/arch/etc/modprobe.d/modprobe.conf
+	"	1	0
+
+> ~/.xsession-errors
+	"	8	0
+
+> /media/home/kane/.function_dtc
+	"	1	0
+
+> /media/home/kane/.vimrc
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrc
+	"	1	0
+	^	19	0
+	.	1	0
+	+	20	31
+	+	19	0
+	+	1	0
+
+> ~/Téléchargements/install-chroot.sh
+	"	242	0
+
+> /etc/motd
+	"	1	0
+
+> ~/Atelier/notes/Astuce
+	"	12	0
+	.	13	0
+	+	13	0
+
+> ~/Atelier/notes/screen
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/.config/awesome/themes/redd/theme
+	"	47	0
+	^	28	17
+	.	28	16
+	+	7	16
+	+	3	0
+	+	23	0
+	+	22	80
+	+	23	24
+	+	25	93
+	+	27	20
+	+	32	31
+	+	33	30
+	+	35	17
+	+	36	15
+	+	37	15
+	+	38	18
+	+	39	19
+	+	40	13
+	+	41	16
+	+	42	20
+	+	43	18
+	+	44	14
+	+	45	17
+	+	47	74
+	+	45	83
+	+	44	77
+	+	43	85
+	+	42	89
+	+	41	81
+	+	40	75
+	+	39	87
+	+	38	85
+	+	37	79
+	+	36	79
+	+	35	83
+	+	33	95
+	+	32	95
+	+	32	0
+	+	9	24
+	+	10	16
+	+	12	24
+	+	12	0
+	+	13	24
+	+	14	16
+	+	15	24
+	+	18	16
+	+	19	16
+	+	20	24
+	+	19	24
+	+	28	23
+	+	29	16
+	+	28	16
+
+> /tmp/crontab.e3DgJ0/crontab
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.vRFAA2/crontab
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/scripts/news.2
+	"	11	80
+	^	11	81
+	.	11	80
+	+	11	80
+
+> ~/scripts/news.1
+	"	1	0
+	^	11	0
+	.	11	0
+	+	2	10
+	+	6	35
+	+	2	10
+	+	3	0
+	+	4	23
+	+	6	8
+	+	9	0
+	+	7	0
+	+	8	35
+	+	10	110
+	+	18	15
+	+	10	75
+	+	10	75
+	+	8	31
+	+	11	0
+
+> /tmp/crontab.bZJZbw/crontab
+	"	1	0
+
+> /tmp/crontab.gMgwhI/crontab
+	"	1	0
+	.	1	0
+	+	2	0
+	+	1	0
+
+> /tmp/crontab.fmXGdp/crontab
+	"	23	0
+
+> ~/scripts/news
+	"	11	3
+	^	11	4
+	.	11	3
+	+	1	11
+	+	3	10
+	+	8	9
+	+	13	17
+	+	10	0
+	+	11	3
+
+> /tmp/crontab.KRdtaI/crontab
+	"	23	42
+	^	23	43
+	.	23	43
+	+	23	43
+
+> ~/Atelier/notes/scripts/vnc.sh
+	"	2	0
+	^	5	25
+	.	5	24
+	+	1	10
+	+	4	4
+	+	6	0
+	+	4	26
+	+	5	24
+
+> ~/Atelier/notes/livre1
+	"	509	0
+	^	509	0
+	.	509	0
+	+	244	95
+	+	250	0
+	+	255	90
+	+	267	50
+	+	257	0
+	+	256	76
+	+	258	0
+	+	259	34
+	+	510	0
+	+	85	0
+	+	84	40
+	+	510	0
+	+	269	0
+	+	273	72
+	+	272	0
+	+	273	0
+	+	277	10
+	+	278	57
+	+	283	0
+	+	284	0
+	+	510	0
+	+	285	0
+	+	315	0
+	+	322	0
+	+	323	21
+	+	335	0
+	+	344	0
+	+	307	5
+	+	308	15
+	+	345	44
+	+	349	25
+	+	348	0
+	+	316	0
+	+	326	0
+	+	347	0
+	+	352	11
+	+	351	53
+	+	358	46
+	+	370	0
+	+	366	0
+	+	365	54
+	+	372	55
+	+	373	23
+	+	376	0
+	+	382	13
+	+	381	20
+	+	389	3
+	+	381	0
+	+	396	0
+	+	402	0
+	+	403	0
+	+	403	0
+	+	407	56
+	+	408	44
+	+	415	0
+	+	414	28
+	+	421	52
+	+	422	0
+	+	413	40
+	+	412	34
+	+	424	0
+	+	429	20
+	+	429	0
+	+	428	9
+	+	438	33
+	+	439	82
+	+	443	0
+	+	455	38
+	+	469	0
+	+	468	13
+	+	463	41
+	+	472	0
+	+	450	0
+	+	444	8
+	+	447	4
+	+	446	53
+	+	473	58
+	+	510	0
+	+	478	62
+	+	488	0
+	+	510	0
+	+	510	0
+	+	453	0
+	+	452	25
+	+	446	65
+	+	447	21
+	+	449	2
+	+	448	3
+	+	445	3
+	+	446	3
+	+	447	4
+	+	448	4
+	+	449	65
+	+	448	25
+	+	489	0
+	+	492	0
+	+	490	0
+	+	491	0
+	+	497	29
+	+	509	0
+
+> /etc/rsyslog.d/50-default.conf
+	"	1	0
+
+> /etc/rsyslog.conf
+	"	54	0
+
+> ~/Atelier/notes/test
+	"	3	0
+	^	3	1
+	.	3	0
+	+	4	0
+	+	3	26
+	+	3	0
+	+	3	0
+	+	3	0
+
+> ~/Atelier/notes/t
+	"	1	0
+
+> ~/réseau
+	"	2	0
+	^	2	0
+	.	1	26
+	+	1	26
+	q	2	0
+
+> ~/.ssh/known_hosts
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/dispatch
+	"	4	58
+	^	4	59
+	.	4	58
+	+	1	8
+	+	4	65
+	+	4	16
+	+	5	0
+	+	4	1
+	+	1	8
+	+	4	58
+	w	4	65
+
+> ~/Documents/Ordinateur.odt
+	"	1	0
+
+> ~/truc.html
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vimr
+	"	1	0
+
+> ~/.vim/skel/tmpl.html
+	"	7	33
+	^	6	14
+	.	8	0
+	+	8	7
+	+	6	14
+	+	8	0
+
+> ~/.vim/skel/tmpl.c
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /var/www/regex.php
+	"	12	128
+	^	12	129
+	.	12	128
+	+	37	0
+	+	36	0
+	+	34	7
+	+	3	5
+	+	5	22
+	+	15	6
+	+	12	33
+	+	32	0
+	+	19	56
+	+	21	1
+	+	23	13
+	+	31	3
+	+	32	0
+	+	34	7
+	+	17	0
+	+	18	0
+	+	23	13
+	+	27	13
+	+	21	33
+	+	22	0
+	+	24	0
+	+	26	0
+	+	28	0
+	+	29	0
+	+	20	0
+	+	11	102
+	+	14	4
+	+	11	87
+	+	13	37
+	+	11	114
+	+	12	100
+	+	11	118
+	+	12	128
+
+> /var/www/truc.php
+	"	2	0
+	.	2	0
+	+	2	1
+	+	2	13
+	+	2	0

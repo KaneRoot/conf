@@ -1,0 +1,9 @@
+xterm*faceName: monospace
+xterm*faceSize: 9
+XTerm*background: dark
+XTerm*foreground: white
+XTerm*pointerColor: green
+XTerm*pointerColorBackground: white
+XTerm*cursorColor: red
+XTerm*saveLines: 2000
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
