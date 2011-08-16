@@ -1,0 +1,14 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+iface eth0 inet static
+address  192.168.0.100 # l'adresse ip de votre pc
+netmask 255.255.255.0 # le masque de sous-réseau
+gateway 192.168.0.1 # la passerelle
+
+auto eth0
