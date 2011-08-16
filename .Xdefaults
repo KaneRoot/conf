@@ -1,9 +1,12 @@
+! You can use an other scalable font
 xterm*faceName: monospace
 xterm*faceSize: 9
-XTerm*background: dark
-XTerm*foreground: white
-XTerm*pointerColor: green
-XTerm*pointerColorBackground: white
-XTerm*cursorColor: red
-XTerm*saveLines: 2000
-XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*background: dark
+xterm*foreground: white
+xterm*pointerColor: green
+xterm*pointerColorBackground: white
+xterm*cursorColor: red
+xterm*saveLines: 2000
+
+! To use the scroll button to copy some text to clipboard
+xterm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
