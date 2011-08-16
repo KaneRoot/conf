@@ -12,3 +12,8 @@ alias l='ls -CF --color=auto'
 
 # upgrade all & more, I know it's bad. Fuck you.
 alias doupgradelawl='sudo apt-get update && sudo apt-get upgrade -y && apt-get dist-upgrade -y'
+
+# other
+
+# 192.168.0.XXX is the server with mpd
+alias musique='ncmpcpp -h 192.168.0.100'
