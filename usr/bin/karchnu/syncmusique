@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rsync -avz --delete server:/media/share/musique /media/echange && echo "COUCOU" > ~/coucou
+
+# un rsync de temps en temps
+[ "$1" = "-a" ] && rsync -avz --delete /media/echange/musique /media/local
