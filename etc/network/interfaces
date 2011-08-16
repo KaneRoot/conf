@@ -7,7 +7,7 @@ iface lo inet loopback
 
 # The primary network interface
 iface eth0 inet static
-address  192.168.0.100 # l'adresse ip de votre pc
+address  192.168.0.XXX # l'adresse ip de votre pc
 netmask 255.255.255.0 # le masque de sous-réseau
 gateway 192.168.0.1 # la passerelle
 

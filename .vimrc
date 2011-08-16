@@ -12,9 +12,11 @@ set nopaste
 set nu
 filetype plugin on
 
-"Suppression de l'indentation pour PROLOG
+"Suppression de l'indentation
 "setl noai nocin nosi inde=
 
+" colorscheme
 colorscheme wombat256mod
 
+" plus d'explications sur karchnu.fr tag vim
 autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
