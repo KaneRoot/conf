@@ -1,7 +1,7 @@
 ! You can use an other scalable font
 xterm*faceName: monospace
 xterm*faceSize: 9
-xterm*background: dark
+xterm*background: #000000
 xterm*foreground: white
 xterm*pointerColor: green
 xterm*pointerColorBackground: white
