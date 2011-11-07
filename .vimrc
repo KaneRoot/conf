@@ -1,5 +1,10 @@
 syntax on
 
+" Plugins :
+" omnicppcomplete
+" NerdTree
+"
+" colorscheme mustang
 set cindent
 set shiftwidth=4
 set softtabstop=4
@@ -12,11 +17,15 @@ set nopaste
 set nu
 filetype plugin on
 
-"Suppression de l'indentation
+"Suppression de l'indentation pour PROLOG
 "setl noai nocin nosi inde=
 
-" colorscheme
 colorscheme wombat256mod
+map <F6> :w %<cr>:! sas '%'<cr>
 
-" plus d'explications sur karchnu.fr tag vim
-autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
+map _ :set cursorline! cursorcolumn!<bar>set cursorline? cursorcolumn?<CR><CR>
+" Rendre les lignes bien moches
+"highlight CursorLine term=reverse cterm=reverse
+"highlight CursorColumn term=reverse cterm=reverse
+
+autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e|exe "%s/pipo/__".substitute(toupper(expand("%")),'\.',"_","")."__/"
