@@ -16,5 +16,14 @@ HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
+# configuration du prompt
+autoload -U promptinit
+promptinit
+prompt zefram
+
+# quelques export
+export EDITOR=vim
+
+
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f ~/.zsh_aliases ] && . ~/.zsh_aliases
