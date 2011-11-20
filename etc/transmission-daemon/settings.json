@@ -41,7 +41,7 @@
     "rpc-authentication-required": true, 
     "rpc-bind-address": "0.0.0.0", 
     "rpc-enabled": true, 
-    "rpc-password": "{monpassworddeouf}", 
+    "rpc-password": "", 
     "rpc-port": 9091, 
     "rpc-username": "karchnu", 
     "rpc-whitelist": "192.168.0.*", 
