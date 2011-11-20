@@ -22,8 +22,10 @@ filetype plugin on
 
 colorscheme wombat256mod
 map <F6> :w %<cr>:! sas '%'<cr>
-
 map _ :set cursorline! cursorcolumn!<bar>set cursorline? cursorcolumn?<CR><CR>
+map <F3> zf%
+map <F4> zo
+
 " Rendre les lignes bien moches
 "highlight CursorLine term=reverse cterm=reverse
 "highlight CursorColumn term=reverse cterm=reverse
