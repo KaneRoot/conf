@@ -1,0 +1,21 @@
+<VirtualHost 192.168.0.100>
+	ServerAdmin karchnu@localhost
+	ServerName karchnu.fr
+	ServerAlias www.karchnu.fr wp.karchnu.fr
+
+	DocumentRoot /srv/
+	<Directory />
+		Options FollowSymLinks Indexes
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
