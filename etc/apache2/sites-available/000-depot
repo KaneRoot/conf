@@ -1,0 +1,32 @@
+# ne pas oublier d'indiquer "NameVirtualHost 192.168.0.100" dans http.conf
+
+# On indique seulement par quel IP on va recevoir la demande
+# Dans mon cas : @ ip locale
+<VirtualHost 192.168.0.100>
+
+	# la personne à contacter
+	ServerAdmin karchnu@localhost
+	# le nom du serveur qui va identifier ce 'virtualhost'
+	ServerName d.karchnu.fr
+	# ses autres noms
+	ServerAlias depot.karchnu.fr repo.karchnu.fr
+
+	# Indiquer l'emplacement de départ
+	DocumentRoot /srv/d/
+	# Dans cet emplacement on pourra suivre des liens symboliques
+	# et on n'a pas besoin d'un fichier d'index
+	<Directory />
+		Options FollowSymLinks Indexes
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
