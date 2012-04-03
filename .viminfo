@@ -8,88 +8,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Dernier motif de recherche  :
-~MSle0~/terminal
+~MSle0/transposee
 
 # Dernier motif de recherche Substitue  :
-~MSle0&hac
+~MSle0~&Length
 
 # Dernières chaînes de substitution :
-$karchnu
+$size()
 
 # Historique ligne de commande (chronologie décroissante) :
 :q
 :w
-:.!!!!
-:q!
-:.!
-:*p
-:set nu on
-:set nu=on
-:set nu
-:e ~/.vimrc
-:'<,'>q
-:e screen
-:.!:q
-:g22
-:%s/hac/karchnu/g
-:%s/hac/karchnu
-:set bg=dark
-:set bg=light
-:set background dark
-:background dark
-:wq
+:'<,'>s/Length/size()/
+:'<,'>s/leng/Leng
+:nohlsearch
+:'<,'>s/^/\/\/
+:e Test.java
+:s/1/+
+:s/1/2
+:s/1/*
+:s/1/\/
+:s/1/4
+:s/1/3
+:s/1/8
+:s/1/7
+:s/1/2/
+:split Symbole.java
+:vsplit NotationSuffixe.java
+:s/-/*/g
+:s/-/\//g
 
 # Historique chaîne de recherche (chronologie décroissante) :
-?/terminal
-?/Key
-? hac
-?/tags
-?/shutdown
-?/FIND
-?/set
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
-? hac
+? Length
+? leng
+? ^
+? 1
+? -
+? +
+? \<s\>
+? tmp
+?/transposee
+?/matrice_to_codeword
+?/setN
+?/read_matrix
+?/create
+? id_v
+? id_c
+? id_comp
+? id_vol
+? id_compa
+? id_client
+?/BILLET
 
 # Historique expression (chronologie décroissante) :
 
@@ -98,686 +67,1604 @@ $karchnu
 # Historique ligne de saisie (chronologie décroissante) :
 
 # Registres :
+"0	LINE	0
+					LN.remove(LN.length - 1);
 ""1	LINE	0
-	meegregersggesd
-"2	LINE	0
-	xterm*faceName: fixed
-	xterm*faceSize: 18
-"3	LINE	0
-	XTerm*font: -*-clean-*-*-*-*-*-*-*-*-*-*-iso8859-*
-	!UXTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
-"4	LINE	0
-	XTerm*font: -*-clean-*-*-*-*-12-*-*-*-*-*-iso8859-*
-	XTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
-"5	LINE	0
-	XTerm*font2: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
-"6	LINE	0
-	fesrgsrgeg
-"7	LINE	0
-	XTerm*font: -monospace*10
-"8	LINE	0
-	XTerm*fontSize: 10
-"9	LINE	0
 	
-"m	CHAR	0
-	l
+"2	LINE	0
+	quelques triggers à rajouter + 
+"3	LINE	0
+	4. rajouter des insertions pour des tests.
+"4	LINE	0
+	PARTIE 3 du projet : procédures et déclencheurs
+	1. PL/SQL : Écrire les procédures PL/SQL qui permettent d'effectuer les opérations suivantes :
+	FAIT :
+		a. Mettre à jour le compteur des miles d'un client donné en prenant en compte l'option de réduction de 100€ pour l'achat du prochain billet(i.e nb_miles = 1000).
+		b. Alerter un client une heure avant l'expiration de sa réservation.
+		c. Récupérer l'état des billets pour un vol donné (nombre de billets vendus, nombre de billets réservés).
+	
+	À FAIRE :
+		d. Valider une commande avant son archivage (une commande non validée n'est pas considérée).
+	2. DÉCLENCHEURS : Écrire les déclencheurs permettant d'assurer les procédures ci-dessous :
+		a. Archiver les commandes validées.
+"5	LINE	0
+	
+"6	LINE	0
+	
+"7	LINE	0
+	@/users/info/il3/pittoli/Atelier/public/ls5/bdd/projet/creation.sql
+	@/users/info/il3/pittoli/Atelier/public/ls5/bdd/projet/insertion.sql
+	@/users/info/il3/pittoli/Atelier/public/ls5/bdd/projet/suppression.sql
+	
+	@/users/info/il3/pittoli/Atelier/public/ls5/bdd/projet/plsql/
+"8	LINE	0
+	
+"9	LINE	0
+	//		Symbole a;
+	//		a = new Symbole("1"); this.symboles.add(a);
+	//		a = new Symbole("2"); this.symboles.add(a);
+	//		a = new Symbole("7"); this.symboles.add(a);
+	//		a = new Symbole("8"); this.symboles.add(a);
+	//		a = new Symbole("+"); this.symboles.add(a);
+	//		a = new Symbole("3"); this.symboles.add(a);
+	//		a = new Symbole("4"); this.symboles.add(a);
+	//		a = new Symbole("*"); this.symboles.add(a);
+	//		a = new Symbole("/"); this.symboles.add(a);
+	//		a = new Symbole("*"); this.symboles.add(a);
+	//		a = new Symbole("+"); this.symboles.add(a);
+	//		a = new Symbole("2"); this.symboles.add(a);
+	//		a = new Symbole("+"); this.symboles.add(a);
+"a@	CHAR	0
+	yyp�kr
 "-	CHAR	0
-	U
+	quelques triggers à rajouter + 
 
 # Marques dans le fichier :
-'0  1  0  ~/Atelier/conf/.config/awesome/rc.lua
-'1  12  28  ~/Atelier/conf/.config/awesome/rc.lua
-'2  6  57  ~/Atelier/conf/README
-'3  1  24  ~/.Xdefaults
-'4  9  0  ~/.Xdefaults
-'5  3  20  ~/.xinitrc
-'6  1  0  ~/lawl
-'7  3  0  ~/lawl
-'8  3  21  ~/.Xdefaults
-'9  2  16  ~/.Xdefaults
+'0  10  0  ~/Atelier/public/ls5/bdd/projet/README
+'1  36  33  ~/.zshrc
+'2  7  4  ~/Atelier/javagame/test/controleur/ControleurMenu.java
+'3  2  16  ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+'4  27  0  ~/Atelier/public/ls5/poo/7/Noeud.java
+'5  1  0  ~/Atelier/public/ls5/poo/7/Symbole.java
+'6  7  41  ~/Atelier/public/ls5/poo/7/Symbole.java
+'7  21  3  ~/Atelier/public/ls5/poo/7/Symbole.java
+'8  34  36  ~/Atelier/public/ls4/poo/tp3/Expression.java
+'9  52  3  ~/Atelier/public/ls4/poo/tp2/Calculatrice.java
 
 # Liste de sauts (le plus récent en premier) :
--'  1  0  ~/Atelier/conf/.config/awesome/rc.lua
--'  12  28  ~/Atelier/conf/.config/awesome/rc.lua
--'  6  57  ~/Atelier/conf/README
--'  1  0  ~/Atelier/conf/README
--'  1  24  ~/.Xdefaults
--'  9  0  ~/.Xdefaults
--'  10  0  ~/.Xdefaults
--'  3  20  ~/.xinitrc
--'  1  0  ~/.xinitrc
--'  1  0  ~/lawl
--'  3  0  ~/lawl
--'  3  21  ~/.Xdefaults
--'  2  16  ~/.Xdefaults
--'  1  0  ~/.Xauthority
--'  8  17  ~/.Xdefaults
--'  16  16  ~/.config/awesome/rc.lua
--'  1  0  ~/.config/awesome/rc.lua
--'  1  43  ~/truc
--'  7  0  ~/.Xdefaults
--'  11  0  ~/.Xdefaults
--'  1  0  ~/.Xressources
--'  5  0  ~/.Xdefaults
--'  6  0  ~/.Xdefaults
--'  4  22  ~/.Xdefaults
--'  15  75  ~/.config/awesome/rc.lua
--'  1  0  ~/monfichier
--'  564  0  ~/Atelier/awesome-configs/rc.lua
--'  1  0  ~/Atelier/awesome-configs/rc.lua
--'  314  3  ~/install-chroot.sh
--'  1  0  ~/install-chroot.sh
--'  81  12  ~/.bashrc
--'  1  0  ~/.bashrc
--'  1  0  ~/scripts/backup.sh
--'  1  40  /tmp/crontab.liVXQM
--'  1  0  ~/.ssh/config
--'  5  5  ~/.xinitrc
--'  1  0  /mnt/arch/etc/modprobe.d/modprobe.conf
--'  61  0  ~/.config/awesome/rc.lua
--'  18  1  ~/.config/awesome/rc.lua
--'  8  0  ~/.xsession-errors
--'  1  0  ~/.xsession-errors
--'  1  0  /media/home/kane/.function_dtc
--'  1  0  /media/home/kane/.vimrc
--'  1  0  ~/.vimrc
--'  242  0  ~/Téléchargements/install-chroot.sh
--'  1  0  ~/Téléchargements/install-chroot.sh
--'  172  31  ~/.config/awesome/rc.lua
--'  19  0  ~/.config/awesome/rc.lua
--'  150  18  ~/.config/awesome/rc.lua
--'  1  0  /etc/motd
--'  2  0  ~/Atelier/notes/screen
--'  12  0  ~/Atelier/notes/Astuce
--'  1  0  ~/Atelier/notes/Astuce
--'  47  0  ~/.config/awesome/themes/redd/theme
--'  1  0  ~/.config/awesome/themes/redd/theme
--'  28  16  ~/.config/awesome/themes/redd/theme
--'  11  0  ~/.config/awesome/themes/redd/theme
--'  12  0  ~/.config/awesome/themes/redd/theme
--'  32  0  ~/.config/awesome/themes/redd/theme
--'  31  17  ~/.config/awesome/themes/redd/theme
--'  27  20  ~/.config/awesome/themes/redd/theme
--'  33  16  ~/.config/awesome/themes/redd/theme
--'  13  0  ~/.config/awesome/themes/redd/theme
--'  48  44  ~/.config/awesome/rc.lua
--'  307  30  ~/.config/awesome/rc.lua
--'  305  36  ~/.config/awesome/rc.lua
--'  276  49  ~/.config/awesome/rc.lua
--'  275  42  ~/.config/awesome/rc.lua
--'  270  49  ~/.config/awesome/rc.lua
--'  269  42  ~/.config/awesome/rc.lua
--'  264  47  ~/.config/awesome/rc.lua
--'  263  25  ~/.config/awesome/rc.lua
--'  257  47  ~/.config/awesome/rc.lua
--'  256  27  ~/.config/awesome/rc.lua
--'  248  27  ~/.config/awesome/rc.lua
--'  245  37  ~/.config/awesome/rc.lua
--'  137  88  ~/.config/awesome/rc.lua
--'  99  71  ~/.config/awesome/rc.lua
--'  52  4  ~/.config/awesome/rc.lua
--'  49  0  ~/.config/awesome/rc.lua
--'  1  0  /tmp/crontab.e3DgJ0/crontab
--'  1  0  /tmp/crontab.vRFAA2/crontab
--'  11  80  ~/scripts/news.2
--'  1  0  ~/scripts/news.2
--'  1  0  ~/scripts/news.1
--'  3  89  ~/scripts/backup.sh
--'  1  0  /tmp/crontab.bZJZbw/crontab
--'  1  0  /tmp/crontab.gMgwhI/crontab
--'  23  0  /tmp/crontab.fmXGdp/crontab
--'  1  0  /tmp/crontab.fmXGdp/crontab
--'  11  0  ~/scripts/news.1
--'  8  31  ~/scripts/news.1
--'  12  0  ~/scripts/news.1
--'  18  15  ~/scripts/news.1
--'  6  0  ~/scripts/news.1
--'  2  10  ~/scripts/news.1
--'  11  3  ~/scripts/news
--'  3  20  ~/.xinitrc
+-'  10  0  ~/Atelier/public/ls5/bdd/projet/README
+-'  1  0  ~/Atelier/public/ls5/bdd/projet/README
+-'  36  33  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  7  4  ~/Atelier/javagame/test/controleur/ControleurMenu.java
+-'  1  0  ~/Atelier/javagame/test/controleur/ControleurMenu.java
+-'  2  16  ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+-'  3  0  ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+-'  28  0  ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+-'  1  0  ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+-'  27  0  ~/Atelier/public/ls5/poo/7/Noeud.java
+-'  1  0  ~/Atelier/public/ls5/poo/7/Noeud.java
+-'  1  0  ~/Atelier/public/ls5/poo/7/Symbole.java
+-'  7  41  ~/Atelier/public/ls5/poo/7/Symbole.java
+-'  21  3  ~/Atelier/public/ls5/poo/7/Symbole.java
+-'  48  0  ~/Atelier/public/ls5/poo/7/Symbole.java
+-'  34  36  ~/Atelier/public/ls4/poo/tp3/Expression.java
+-'  1  5  ~/Atelier/public/ls4/poo/tp3/Expression.java
+-'  2  0  ~/Atelier/public/ls4/poo/tp3/Expression.java
+-'  4  0  ~/Atelier/public/ls4/poo/tp3/Expression.java
+-'  52  3  ~/Atelier/public/ls4/poo/tp2/Calculatrice.java
+-'  1  0  ~/Atelier/public/ls4/poo/tp2/Calculatrice.java
+-'  1  0  ~/Atelier/public/ls5/bdd/projet/plsql/majmiles.sql
+-'  109  45  ~/Atelier/javagame/test/controleur/ControleurMenu.java
+-'  117  0  ~/Atelier/javagame/test/controleur/ControleurMenu.java
+-'  59  1  ~/Atelier/javagame/test/controleur/ControlerMap.java
+-'  1  0  ~/Atelier/javagame/test/controleur/ControlerMap.java
+-'  37  0  ~/Atelier/public/ls5/bdd/projet/autrecours
+-'  39  0  ~/Atelier/public/ls5/bdd/projet/autrecours
+-'  1  0  ~/t/README
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_polynomial/FileToSend
+-'  1  5  ~/Atelier/public/ls5/reseau/3/code_correcteur_bit_parite/FileToSend
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/FileToSend
+-'  27  0  ~/Atelier/public/ls5/reseau/3/README
+-'  1  0  ~/Atelier/public/ls5/reseau/3/README
+-'  69  41  ~/Atelier/public/ls5/reseau/3/README
+-'  37  49  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/logic.c
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/logic.c
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/logic.
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/FileReceived
+-'  11  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/dotest.sh
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/dotest.sh
+-'  12  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/dotest.sh
+-'  13  9  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/dotest.sh
+-'  57  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/decoding.c
+-'  141  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/decoding.c
+-'  128  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  104  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  110  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  23  1  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  64  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  455  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  65  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  26  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  133  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  130  45  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  67  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  57  11  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  75  29  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  90  11  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  91  11  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  114  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  131  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  81  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  129  45  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  23  0  ~/.zshrc
+-'  109  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  54  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  101  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  9  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  47  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  99  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  78  9  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  100  1  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  127  41  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+-'  83  8  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  48  1  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  103  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  66  1  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+-'  4  16  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.
+-'  66  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  64  13  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  34  12  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+-'  31  23  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/Makefile
+-'  22  65  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/Makefile
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/Makefile
+-'  53  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  6  24  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+-'  9  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/calculs_base.c
+-'  1  0  ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/calculs_base.c
+-'  65  54  ~/Atelier/public/ls5/reseau/3/README
+-'  45  83  ~/Atelier/public/ls5/reseau/3/README
+-'  46  0  ~/Atelier/javagame/todo
+-'  1  0  ~/Atelier/javagame/todo
+-'  1  0  ~/Atelier/si_ndn/README
+-'  8  0  ~/wpa_supplicant.conf
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
 
-> ~/Atelier/conf/.config/awesome/rc.lua
-	"	1	0
-	^	12	29
-	.	12	28
-	+	12	28
-
-> ~/Atelier/conf/README
-	"	6	57
-	^	6	58
-	.	6	57
-	+	6	57
-
-> ~/.Xdefaults
-	"	1	24
-	^	1	25
-	.	1	24
-	+	3	22
-	+	4	22
-	+	6	5
-	+	6	35
-	+	11	12
-	+	6	0
-	+	5	0
-	+	11	21
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	7	22
-	+	7	22
-	+	11	0
-	+	9	55
-	+	9	5
-	+	9	30
-	+	9	0
-	+	9	0
-	+	1	0
-	+	1	0
-	+	2	18
-	+	1	21
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	18
-	+	8	17
-	+	2	0
-	+	1	0
-	+	1	2
-	+	2	1
-	+	1	13
-	+	2	16
-	+	3	21
-	+	10	0
-	+	10	0
-	+	10	0
-	+	2	0
-	+	1	24
-
-> ~/.xinitrc
-	"	3	20
-	^	3	21
-	.	3	20
-	+	5	5
-	+	3	11
-	+	4	0
-	+	3	20
-
-> ~/lawl
-	"	1	0
-	^	3	0
-	.	3	0
-	+	1	0
-	+	3	0
-
-> ~/.Xauthority
-	"	1	0
-
-> ~/.config/awesome/rc.lua
-	"	16	16
-	^	16	17
-	.	15	17
-	+	15	36
-	+	18	17
-	+	19	35
-	+	172	31
-	+	16	35
-	+	15	17
-
-> ~/truc
-	"	1	43
-	^	1	44
-	.	1	43
-	+	1	43
-
-> ~/.Xressources
-	"	1	0
-
-> ~/monfichier
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Atelier/awesome-configs/rc.lua
-	"	564	0
-	^	49	25
-	.	49	24
-	+	49	24
-
-> ~/install-chroot.sh
-	"	314	3
-
-> ~/.bashrc
-	"	81	12
-	^	81	13
-	.	81	12
-	+	84	39
-	+	83	24
-	+	82	25
-	+	81	12
-
-> ~/scripts/backup.sh
-	"	1	0
-	^	3	90
-	.	3	90
-	+	1	11
-	+	3	90
-
-> /tmp/crontab.liVXQM
-	"	1	40
-	^	1	41
-	.	2	0
-	+	2	0
-
-> ~/.ssh/config
-	"	1	0
-	^	12	13
-	.	12	12
-	+	4	10
-	+	8	10
-	+	12	12
-
-> /mnt/arch/etc/modprobe.d/modprobe.conf
-	"	1	0
-
-> ~/.xsession-errors
-	"	8	0
-
-> /media/home/kane/.function_dtc
-	"	1	0
-
-> /media/home/kane/.vimrc
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vimrc
-	"	1	0
-	^	19	0
-	.	1	0
-	+	20	31
-	+	19	0
-	+	1	0
-
-> ~/Téléchargements/install-chroot.sh
-	"	242	0
-
-> /etc/motd
-	"	1	0
-
-> ~/Atelier/notes/Astuce
-	"	12	0
-	.	13	0
-	+	13	0
-
-> ~/Atelier/notes/screen
-	"	2	0
-	.	2	0
-	+	2	0
-
-> ~/.config/awesome/themes/redd/theme
-	"	47	0
-	^	28	17
-	.	28	16
-	+	7	16
-	+	3	0
-	+	23	0
-	+	22	80
-	+	23	24
-	+	25	93
-	+	27	20
-	+	32	31
-	+	33	30
-	+	35	17
-	+	36	15
-	+	37	15
-	+	38	18
-	+	39	19
-	+	40	13
-	+	41	16
-	+	42	20
-	+	43	18
-	+	44	14
-	+	45	17
-	+	47	74
-	+	45	83
-	+	44	77
-	+	43	85
-	+	42	89
-	+	41	81
-	+	40	75
-	+	39	87
-	+	38	85
-	+	37	79
-	+	36	79
-	+	35	83
-	+	33	95
-	+	32	95
-	+	32	0
-	+	9	24
-	+	10	16
-	+	12	24
-	+	12	0
-	+	13	24
-	+	14	16
-	+	15	24
-	+	18	16
-	+	19	16
-	+	20	24
-	+	19	24
-	+	28	23
-	+	29	16
-	+	28	16
-
-> /tmp/crontab.e3DgJ0/crontab
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-
-> /tmp/crontab.vRFAA2/crontab
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-
-> ~/scripts/news.2
-	"	11	80
-	^	11	81
-	.	11	80
-	+	11	80
-
-> ~/scripts/news.1
-	"	1	0
-	^	11	0
+> ~/Atelier/public/ls5/bdd/projet/README
+	"	10	0
+	^	10	26
 	.	11	0
-	+	2	10
-	+	6	35
-	+	2	10
-	+	3	0
-	+	4	23
-	+	6	8
-	+	9	0
+	+	6	0
+	+	4	21
+	+	5	21
+	+	3	2
+	+	4	2
+	+	5	2
+	+	6	41
+	+	8	40
+	+	11	5
+	+	11	9
+	+	11	0
+	+	9	21
+	+	11	0
+	+	11	31
+	+	6	0
+	+	11	0
+	+	6	2
 	+	7	0
-	+	8	35
-	+	10	110
-	+	18	15
-	+	10	75
-	+	10	75
-	+	8	31
+	+	6	32
+	+	10	25
 	+	11	0
 
-> /tmp/crontab.bZJZbw/crontab
-	"	1	0
-
-> /tmp/crontab.gMgwhI/crontab
-	"	1	0
-	.	1	0
-	+	2	0
-	+	1	0
-
-> /tmp/crontab.fmXGdp/crontab
-	"	23	0
-
-> ~/scripts/news
-	"	11	3
-	^	11	4
-	.	11	3
-	+	1	11
-	+	3	10
-	+	8	9
-	+	13	17
-	+	10	0
-	+	11	3
-
-> /tmp/crontab.KRdtaI/crontab
-	"	23	42
-	^	23	43
-	.	23	43
-	+	23	43
-
-> ~/Atelier/notes/scripts/vnc.sh
-	"	2	0
-	^	5	25
-	.	5	24
-	+	1	10
-	+	4	4
-	+	6	0
-	+	4	26
-	+	5	24
-
-> ~/Atelier/notes/livre1
-	"	509	0
-	^	509	0
-	.	509	0
-	+	244	95
-	+	250	0
-	+	255	90
-	+	267	50
-	+	257	0
-	+	256	76
-	+	258	0
-	+	259	34
-	+	510	0
-	+	85	0
-	+	84	40
-	+	510	0
-	+	269	0
-	+	273	72
-	+	272	0
-	+	273	0
-	+	277	10
-	+	278	57
-	+	283	0
-	+	284	0
-	+	510	0
-	+	285	0
-	+	315	0
-	+	322	0
-	+	323	21
-	+	335	0
-	+	344	0
-	+	307	5
-	+	308	15
-	+	345	44
-	+	349	25
-	+	348	0
-	+	316	0
-	+	326	0
-	+	347	0
-	+	352	11
-	+	351	53
-	+	358	46
-	+	370	0
-	+	366	0
-	+	365	54
-	+	372	55
-	+	373	23
-	+	376	0
-	+	382	13
-	+	381	20
-	+	389	3
-	+	381	0
-	+	396	0
-	+	402	0
-	+	403	0
-	+	403	0
-	+	407	56
-	+	408	44
-	+	415	0
-	+	414	28
-	+	421	52
-	+	422	0
-	+	413	40
-	+	412	34
-	+	424	0
-	+	429	20
-	+	429	0
-	+	428	9
-	+	438	33
-	+	439	82
-	+	443	0
-	+	455	38
-	+	469	0
-	+	468	13
-	+	463	41
-	+	472	0
-	+	450	0
-	+	444	8
-	+	447	4
-	+	446	53
-	+	473	58
-	+	510	0
-	+	478	62
-	+	488	0
-	+	510	0
-	+	510	0
-	+	453	0
-	+	452	25
-	+	446	65
-	+	447	21
-	+	449	2
-	+	448	3
-	+	445	3
-	+	446	3
-	+	447	4
-	+	448	4
-	+	449	65
-	+	448	25
-	+	489	0
-	+	492	0
-	+	490	0
-	+	491	0
-	+	497	29
-	+	509	0
-
-> /etc/rsyslog.d/50-default.conf
-	"	1	0
-
-> /etc/rsyslog.conf
-	"	54	0
-
-> ~/Atelier/notes/test
-	"	3	0
-	^	3	1
-	.	3	0
-	+	4	0
-	+	3	26
-	+	3	0
-	+	3	0
-	+	3	0
-
-> ~/Atelier/notes/t
-	"	1	0
-
-> ~/réseau
-	"	2	0
-	^	2	0
-	.	1	26
-	+	1	26
-	q	2	0
-
-> ~/.ssh/known_hosts
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/dispatch
-	"	4	58
-	^	4	59
-	.	4	58
-	+	1	8
-	+	4	65
-	+	4	16
-	+	5	0
-	+	4	1
-	+	1	8
-	+	4	58
-	w	4	65
-
-> ~/Documents/Ordinateur.odt
-	"	1	0
-
-> ~/truc.html
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vimr
-	"	1	0
-
-> ~/.vim/skel/tmpl.html
-	"	7	33
-	^	6	14
-	.	8	0
-	+	8	7
-	+	6	14
+> ~/.zshrc
+	"	36	33
+	^	36	34
+	.	36	33
+	+	23	53
 	+	8	0
+	+	23	0
+	+	36	33
 
-> ~/.vim/skel/tmpl.c
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
+> ~/Atelier/javagame/test/controleur/ControleurMenu.java
+	"	7	4
+	^	116	42
+	.	116	41
+	+	124	0
+	+	124	0
+	+	124	9
+	+	124	0
+	+	124	0
+	+	124	0
+	+	124	52
+	+	124	0
+	+	124	0
+	+	124	0
+	+	124	0
+	+	124	24
+	+	124	26
+	+	124	0
+	+	124	2
+	+	124	0
+	+	124	0
+	+	122	0
+	+	103	0
+	+	114	0
+	+	116	41
 
-> /var/www/regex.php
-	"	12	128
-	^	12	129
-	.	12	128
+> ~/Atelier/public/ls5/poo/7/NotationSuffixe.java
+	"	2	16
+	^	20	25
+	.	3	0
+	+	38	0
+	+	38	0
+	+	38	35
+	+	38	0
+	+	38	1
+	+	38	0
+	+	38	44
+	+	38	22
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	44
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	40
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	19
+	+	38	21
+	+	38	45
+	+	38	0
+	+	38	0
+	+	38	27
+	+	38	10
+	+	38	26
+	+	38	0
+	+	38	0
+	+	38	29
+	+	38	30
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	35
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	33	3
+	+	34	0
+	+	29	29
+	+	33	0
+	+	31	0
+	+	32	30
+	+	35	18
+	+	13	15
+	+	11	0
+	+	11	1
+	+	2	25
+	+	20	24
+	+	11	0
+	+	28	0
+	+	3	0
+
+> ~/correctionTL
+	"	54	27
+	^	54	28
+	.	54	27
+	+	3	47
+	+	8	9
+	+	6	11
+	+	8	25
+	+	6	4
+	+	11	70
+	+	14	29
+	+	13	18
+	+	13	29
+	+	15	39
+	+	17	49
+	+	19	45
+	+	24	32
+	+	30	64
+	+	42	7
+	+	41	8
+	+	45	16
+	+	35	12
+	+	36	9
 	+	37	0
-	+	36	0
-	+	34	7
-	+	3	5
-	+	5	22
-	+	15	6
-	+	12	33
-	+	32	0
-	+	19	56
-	+	21	1
-	+	23	13
-	+	31	3
-	+	32	0
-	+	34	7
-	+	17	0
-	+	18	0
-	+	23	13
-	+	27	13
-	+	21	33
-	+	22	0
-	+	24	0
+	+	38	0
+	+	39	11
+	+	45	19
+	+	43	0
+	+	48	25
+	+	53	10
+	+	54	27
+
+> ~/Atelier/public/ls5/poo/7/Noeud.java
+	"	27	0
+	^	17	17
+	.	25	0
+	+	1	18
+	+	27	0
+	+	5	13
+	+	3	35
+	+	10	0
+	+	10	0
+	+	8	0
+	+	9	0
+	+	5	0
+	+	3	48
+	+	4	23
+	+	7	13
 	+	26	0
+	+	24	0
+	+	16	9
+	+	15	9
+	+	23	0
+	+	19	14
+	+	23	0
+	+	19	38
+	+	20	0
+	+	21	0
+	+	22	0
+	+	26	0
+	+	25	29
+	+	17	16
+	+	19	31
+	+	26	0
+	+	25	0
+
+> ~/Atelier/public/ls5/poo/7/Symbole.java
+	"	1	0
+	^	7	42
+	.	7	41
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	14
+	+	48	17
+	+	48	0
+	+	48	0
+	+	48	0
+	+	48	70
+	+	48	0
+	+	48	13
+	+	48	0
+	+	48	0
+	+	35	15
+	+	35	3
+	+	35	9
+	+	35	0
+	+	35	0
+	+	35	33
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	19
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	38	3
+	+	6	1
+	+	3	7
+	+	5	14
+	+	35	12
+	+	35	21
+	+	38	0
+	+	37	14
+	+	37	13
+	+	35	0
+	+	10	0
+	+	35	0
+	+	30	1
+	+	32	0
+	+	34	0
+	+	35	0
+	+	37	0
+	+	42	0
+	+	41	16
+	+	46	0
+	+	47	0
+	+	45	30
 	+	28	0
 	+	29	0
-	+	20	0
-	+	11	102
-	+	14	4
-	+	11	87
-	+	13	37
-	+	11	114
-	+	12	100
-	+	11	118
-	+	12	128
+	+	17	65
+	+	19	34
+	+	27	4
+	+	17	38
+	+	18	0
+	+	27	4
+	+	28	0
+	+	7	41
 
-> /var/www/truc.php
-	"	2	0
-	.	2	0
-	+	2	1
-	+	2	13
+> ~/Atelier/public/ls5/poo/7/Test.java
+	"	5	0
+	^	2	27
+	.	2	26
+	+	18	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	15	0
+	+	17	0
+	+	14	11
+	+	16	37
+	+	1	32
+	+	2	26
+
+> ~/Atelier/public/ls5/bdd/projet/autrecours
+	"	1	0
+	^	38	44
+	.	38	43
+	+	39	56
+	+	39	19
+	+	39	39
+	+	39	52
+	+	39	68
+	+	39	108
+	+	39	22
+	+	39	0
+	+	18	64
+	+	18	76
+	+	39	0
+	+	20	46
+	+	28	34
+	+	30	63
+	+	33	44
+	+	36	22
+	+	38	43
+
+> ~/Atelier/javagame/test/controleur/thread/MouvementThread.java
+	"	73	0
+
+> ~/Atelier/public/ls4/poo/tp3/Expression.java
+	"	34	36
+	.	34	32
+	+	1	1
+	+	1	0
+	+	34	32
+
+> ~/Atelier/public/ls4/poo/tp2/Calculatrice.java
+	"	52	3
+
+> ~/Atelier/public/ls5/bdd/projet/plsql/majmiles.sql
+	"	1	0
+
+> ~/Atelier/javagame/test/controleur/ControlerMap.java
+	"	59	1
+	^	58	16
+	.	58	15
+	+	60	0
+	+	59	0
+	+	58	15
+
+> ~/Atelier/public/ls5/bdd/projet/site/accueil/includes/in_haut
+	"	11	27
+	^	11	28
+	.	11	27
+	+	4	23
+	+	5	40
+	+	10	26
+	+	12	0
+	+	10	83
+	+	11	27
+
+> ~/Atelier/public/ls5/bdd/projet/site/accueil/index.php
+	"	1	0
+	.	24	0
+	+	2	17
+	+	24	0
+	+	24	27
+	+	24	0
+	+	24	0
+	+	24	48
+	+	24	0
+	+	24	12
+	+	10	0
+	+	24	0
+	+	24	2
+	+	25	0
+	+	24	0
+
+> ~/Atelier/public/ls5/bdd/projet/site/accueil/connexion.php
+	"	11	6
+	^	11	7
+	.	11	6
+	+	1	23
+	+	1	18
+	+	1	24
+	+	1	22
+	+	13	0
+	+	3	0
+	+	3	0
+	+	1	22
+	+	3	0
+	+	2	3
+	+	12	0
+	+	12	58
+	+	12	0
+	+	12	36
+	+	12	42
+	+	12	0
+	+	12	32
+	+	12	95
+	+	12	64
+	+	12	96
+	+	12	0
+	+	12	0
+	+	10	0
+	+	11	6
+
+> ~/Atelier/public/ls5/bdd/projet/site/accueil/includes/in_pied
+	"	1	1
+
+> ~/Atelier/public/ls5/bdd/projet/site/accueil/connexion
+	"	1	0
+
+> ~/Atelier/public/ls5/bdd/projet/site/index.html
+	"	10	5
+	^	10	6
+	.	11	0
+	+	1	0
+	+	6	23
+	+	12	0
+	+	11	6
+	+	11	0
+
+> ~/t/README
+	"	1	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_polynomial/FileToSend
+	"	1	0
+	^	1	15
+	.	1	14
+	+	1	0
+	+	1	0
+	+	1	14
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_bit_parite/FileToSend
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/FileToSend
+	"	1	0
+	^	1	6
+	.	1	5
 	+	2	0
+	+	1	5
+
+> ~/Atelier/public/ls5/reseau/3/README
+	"	27	0
+	^	76	0
+	.	77	0
+	+	6	0
+	+	2	0
+	+	4	0
+	+	13	0
+	+	7	23
+	+	22	0
+	+	15	46
+	+	17	23
+	+	6	49
+	+	15	49
+	+	17	95
+	+	21	21
+	+	19	97
+	+	21	54
+	+	15	50
+	+	77	13
+	+	23	55
+	+	23	125
+	+	13	26
+	+	9	0
+	+	77	0
+	+	43	10
+	+	45	83
+	+	59	0
+	+	45	2
+	+	60	2
+	+	63	88
+	+	77	0
+	+	57	15
+	+	59	0
+	+	65	54
+	+	27	0
+	+	29	161
+	+	29	50
+	+	30	189
+	+	31	0
+	+	32	39
+	+	35	15
+	+	33	0
+	+	38	0
+	+	35	154
+	+	36	68
+	+	38	96
+	+	39	88
+	+	41	155
+	+	46	0
+	+	51	32
+	+	66	24
+	+	67	2
+	+	68	3
+	+	74	40
+	+	66	58
+	+	71	49
+	+	77	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/decoding.c
+	"	82	21
+	.	84	0
+	+	66	9
+	+	63	12
+	+	72	80
+	+	73	0
+	+	72	0
+	+	72	83
+	+	104	47
+	+	105	44
+	+	72	32
+	+	104	42
+	+	72	48
+	+	73	0
+	+	72	35
+	+	70	14
+	+	73	0
+	+	72	0
+	+	104	0
+	+	105	0
+	+	81	15
+	+	110	41
+	+	116	38
+	+	116	38
+	+	116	38
+	+	116	38
+	+	117	38
+	+	117	38
+	+	117	38
+	+	117	0
+	+	119	0
+	+	116	0
+	+	110	12
+	+	116	0
+	+	82	8
+	+	110	0
+	+	110	0
+	+	116	0
+	+	111	0
+	+	110	45
+	+	116	0
+	+	116	0
+	+	117	0
+	+	116	45
+	+	84	26
+	+	104	0
+	+	82	20
+	+	106	0
+	+	105	0
+	+	101	29
+	+	102	27
+	+	105	0
+	+	104	31
+	+	105	31
+	+	109	6
+	+	110	0
+	+	108	57
+	+	116	0
+	+	114	57
+	+	116	0
+	+	115	0
+	+	116	0
+	+	114	37
+	+	108	35
+	+	107	19
+	+	113	20
+	+	107	26
+	+	104	19
+	+	105	20
+	+	104	0
+	+	87	22
+	+	86	15
+	+	87	22
+	+	84	0
+	+	104	37
+	+	105	0
+	+	104	3
+	+	86	0
+	+	84	18
+	+	104	2
+	+	86	0
+	+	133	0
+	+	140	0
+	+	157	28
+	+	166	11
+	+	177	0
+	+	158	0
+	+	159	0
+	+	165	0
+	+	167	0
+	+	138	0
+	+	142	0
+	+	137	15
+	+	143	4
+	+	144	31
+	+	189	25
+	+	86	0
+	+	104	0
+	+	81	17
+	+	81	17
+	+	81	0
+	+	84	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/codingdecoding.h
+	"	131	0
+	^	132	34
+	.	132	33
+	+	127	0
+	+	126	0
+	+	127	41
+	+	128	55
+	+	129	33
+	+	129	45
+	+	131	0
+	+	130	45
+	+	128	0
+	+	129	0
+	+	133	33
+	+	132	33
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/test.c
+	"	26	56
+	^	26	58
+	.	26	57
+	+	29	0
+	+	33	0
+	+	52	67
+	+	1	0
+	+	5	0
+	+	26	57
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/coding.c
+	"	82	2
+	^	100	3
+	.	100	0
+	+	66	20
+	+	66	30
+	+	66	0
+	+	107	0
+	+	66	5
+	+	66	5
+	+	66	0
+	+	66	0
+	+	66	44
+	+	66	22
+	+	66	44
+	+	66	22
+	+	66	44
+	+	66	22
+	+	66	44
+	+	66	0
+	+	107	0
+	+	108	0
+	+	108	0
+	+	107	0
+	+	106	38
+	+	106	21
+	+	106	0
+	+	66	1
+	+	66	16
+	+	66	25
+	+	66	42
+	+	66	9
+	+	106	3
+	+	79	0
+	+	105	0
+	+	106	0
+	+	68	0
+	+	106	0
+	+	69	17
+	+	79	0
+	+	69	24
+	+	73	0
+	+	105	0
+	+	81	31
+	+	106	0
+	+	73	0
+	+	79	0
+	+	72	0
+	+	73	0
+	+	82	33
+	+	107	0
+	+	70	22
+	+	107	0
+	+	87	5
+	+	88	5
+	+	88	0
+	+	87	36
+	+	105	0
+	+	78	0
+	+	89	21
+	+	90	19
+	+	71	25
+	+	105	0
+	+	91	36
+	+	92	34
+	+	105	29
+	+	72	6
+	+	105	26
+	+	82	0
+	+	82	0
+	+	87	0
+	+	87	20
+	+	83	0
+	+	87	0
+	+	95	0
+	+	95	22
+	+	95	0
+	+	95	0
+	+	93	0
+	+	95	0
+	+	94	25
+	+	95	16
+	+	107	0
+	+	105	0
+	+	105	16
+	+	105	16
+	+	105	0
+	+	107	0
+	+	107	0
+	+	101	0
+	+	95	0
+	+	65	0
+	+	63	24
+	+	64	9
+	+	66	0
+	+	95	0
+	+	66	0
+	+	84	0
+	+	99	24
+	+	25	17
+	+	96	15
+	+	98	0
+	+	97	0
+	+	100	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/logic.c
+	"	37	49
+	^	37	50
+	.	37	47
+	+	44	0
+	+	37	47
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/logic.
+	"	1	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/FileReceived
+	"	1	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/dotest.sh
+	"	11	0
+	^	10	6
+	.	10	5
+	+	13	9
+	+	11	2
+	+	13	13
+	+	10	5
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.c
+	"	492	0
+	^	474	30
+	.	492	0
+	+	1	0
+	+	250	0
+	+	500	0
+	+	6	24
+	+	7	0
+	+	9	0
+	+	7	0
+	+	4	16
+	+	455	0
+	+	474	29
+	+	492	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.h
+	"	113	0
+	^	112	30
+	.	113	0
+	+	1	8
+	+	2	7
+	+	2	0
+	+	4	0
+	+	115	0
+	+	66	0
+	+	114	0
+	+	66	0
+	+	111	41
+	+	110	0
+	+	112	29
+	+	113	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/error.c
+	"	64	0
+	.	81	0
+	+	66	0
+	+	72	0
+	+	74	0
+	+	81	0
+
+> ~/Atelier/public/ls4/algebre/base.c
+	"	96	0
+
+> ~/Atelier/public/ls4/algebre/calculs_base.c
+	"	109	17
+
+> ~/Atelier/public/ls4/algebre/tests.c
+	"	162	1
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/mesfonctions.
+	"	1	0
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/Makefile
+	"	31	23
+	^	28	50
+	.	28	50
+	+	16	64
+	+	19	57
+	+	22	53
+	+	25	59
+	+	28	50
+
+> ~/Atelier/public/ls5/reseau/3/code_correcteur_codage_hamming/calculs_base.c
+	"	9	0
+
+> ~/Atelier/javagame/todo
+	"	46	0
+	^	42	0
+	.	46	0
+	+	23	29
+	+	26	55
+	+	27	59
+	+	31	9
+	+	33	0
+	+	35	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	36	16
+	+	34	22
+	+	33	22
+	+	30	0
+	+	37	40
+	+	38	14
+	+	39	27
+	+	1	0
+	+	47	0
+	+	35	46
+	+	41	8
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	44	0
+	+	45	0
+	+	46	0
+
+> ~/Atelier/si_ndn/README
+	"	1	0
+
+> ~/wpa_supplicant.conf
+	"	8	0
+	^	37	11
+	.	7	0
+	+	37	11
+	+	40	0
+	+	7	0
+
+> ~/Atelier/public/ls5/bdd/projet/plsql/nbbillets.sql
+	"	4	0
+
+> ~/Atelier/public/ls5/bdd/projet/plsql/etatreservation.sql
+	"	41	0
+	^	41	24
+	.	41	24
+	+	41	24
+
+> ~/Atelier/public/ls5/bdd/projet/insertion.sql
+	"	51	0
+	^	32	29
+	.	32	28
+	+	5	0
+	+	15	29
+	+	16	22
+	+	18	22
+	+	19	28
+	+	20	26
+	+	21	23
+	+	23	49
+	+	5	97
+	+	18	0
+	+	25	78
+	+	25	78
+	+	42	0
+	+	25	135
+	+	25	24
+	+	25	145
+	+	26	0
+	+	28	0
+	+	26	22
+	+	28	22
+	+	42	26
+	+	15	23
+	+	16	23
+	+	18	23
+	+	19	25
+	+	21	0
+	+	26	0
+	+	42	44
+	+	42	40
+	+	35	34
+	+	34	61
+	+	35	49
+	+	36	26
+	+	37	26
+	+	38	26
+	+	42	0
+	+	29	0
+	+	40	55
+	+	41	48
+	+	5	1
+	+	23	1
+	+	6	42
+	+	7	42
+	+	5	78
+	+	32	2
+	+	4	90
+	+	9	27
+	+	18	0
+	+	17	19
+	+	22	37
+	+	23	35
+	+	25	0
+	+	51	0
+	+	27	72
+	+	32	28
+
+> ~/Atelier/public/ls5/bdd/projet/suppression.sql
+	"	42	0
+	.	43	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	65
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	0
+	+	46	23
+	+	46	27
+	+	46	27
+	+	46	26
+	+	46	23
+	+	46	19
+	+	46	19
+	+	46	19
+	+	46	21
+	+	46	23
+	+	46	21
+	+	46	24
+	+	46	22
+	+	46	27
+	+	46	27
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	23
+	+	46	31
+	+	46	31
+	+	46	30
+	+	46	35
+	+	46	48
+	+	46	0
+	+	43	52
+	+	43	0
+	+	43	0
+	+	43	22
+	+	43	0
+	+	43	0
+	+	43	0
+	+	43	0
+	+	9	0
+	+	43	0
+
+> ~/Atelier/public/ls5/bdd/projet/creation.sql
+	"	41	0
+	.	40	0
+	+	21	21
+	+	26	36
+	+	27	49
+	+	25	23
+	+	27	20
+	+	29	43
+	+	31	28
+	+	72	92
+	+	72	0
+	+	72	34
+	+	38	32
+	+	39	17
+	+	38	17
+	+	55	28
+	+	55	0
+	+	54	0
+	+	55	0
+	+	58	0
+	+	55	0
+	+	58	55
+	+	53	0
+	+	55	0
+	+	28	0
+	+	27	0
+	+	19	0
+	+	10	0
+	+	13	85
+	+	11	43
+	+	72	0
+	+	72	0
+	+	69	0
+	+	68	0
+	+	72	121
+	+	70	64
+	+	67	19
+	+	66	14
+	+	71	42
+	+	65	17
+	+	66	17
+	+	77	30
+	+	79	0
+	+	74	19
+	+	79	49
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	92
+	+	91	0
+	+	89	35
+	+	88	0
+	+	91	95
+	+	91	37
+	+	100	0
+	+	97	0
+	+	96	0
+	+	99	91
+	+	97	25
+	+	91	26
+	+	89	29
+	+	69	21
+	+	54	18
+	+	101	0
+	+	31	79
+	+	63	43
+	+	75	57
+	+	72	0
+	+	91	0
+	+	91	55
+	+	38	0
+	+	53	0
+	+	52	0
+	+	35	28
+	+	10	33
+	+	10	11
+	+	10	16
+	+	10	0
+	+	6	0
+	+	6	0
+	+	4	0
+	+	12	46
+	+	11	86
+	+	12	46
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	13
+	+	91	43
+	+	91	20
+	+	91	0
+	+	27	0
+	+	91	0
+	+	27	0
+	+	27	27
+	+	27	0
+	+	27	83
+	+	27	0
+	+	27	0
+	+	27	0
+	+	40	0
+
+> ~/Atelier/public/ls5/bdd/projet/bla.1
+	"	1	0
+
+> ~/Atelier/public/ls5/bdd/projet/bla.2
+	"	1	0
+
+> ~/Atelier/public/ls5/bdd/projet/contraintes
+	"	1	0
+
+> ~/notes
+	"	5	0
+	.	5	0
+	+	7	31
+	+	3	14
+	+	9	17
+	+	16	0
+	+	8	10
+	+	14	29
+	+	6	0
+	+	1	0
+	+	6	0
+	+	16	0
+	+	4	31
+	+	5	0
+
+> ~/.xinitrc
+	"	3	0
+	^	3	0
+	.	3	0
+	+	5	0
+	+	3	0
+	+	5	0
+	+	3	0
+
+> ~/.config/Trolltech.conf
+	"	1	0
+
+> ~/poo/AEnvoyer/Producteur/Buffer.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/3/1/Carte.java
+	"	44	0
+	.	3	0
+	+	10	0
+	+	3	0
+
+> ~/Atelier/public/ls5/poo/4/2/Test.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/4/2/Reserve.java
+	"	1	0
+	^	24	0
+	.	24	0
+	+	8	8
+	+	8	16
+	+	9	32
+	+	9	95
+	+	10	0
+	+	10	0
+	+	14	7
+	+	14	20
+	+	15	39
+	+	15	41
+	+	15	101
+	+	16	0
+	+	13	0
+	+	21	16
+	+	21	18
+	+	22	30
+	+	22	32
+	+	22	34
+	+	22	94
+	+	23	0
+	+	28	7
+	+	28	20
+	+	28	22
+	+	29	38
+	+	29	39
+	+	29	41
+	+	29	101
+	+	30	0
+	+	27	0
+	+	22	0
+	+	24	0
+
+> ~/Atelier/public/ls5/poo/4/2/Producteur.java
+	"	16	0
+	.	16	0
+	+	16	8
+	+	16	49
+	+	20	21
+	+	20	23
+	+	20	87
+	+	24	0
+	+	16	0
+
+> ~/Atelier/public/ls5/poo/4/2/Consommateur.java
+	"	16	0
+	.	16	0
+	+	16	8
+	+	16	49
+	+	20	21
+	+	20	23
+	+	20	89
+	+	24	0
+	+	16	0
+
+> ~/Atelier/public/ls5/poo/4/1/CompteARebours.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Compte à rebours/exo1/CompteARebours.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/correction/contrôleur/PointContrôleur.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/correction/modèle/PointModèle.java
+	"	11	0
+
+> ~/Atelier/public/ls5/poo/correction/modèle/ChangementPositionEvent.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/correction/modèle/ChangementPositionListener.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/correction/vue/PointVue.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/correction/vue/VueGraphe.java
+	"	81	0
+
+> ~/Atelier/public/ls5/poo/correction/vue/VueSlider.java
+	"	12	0
+
+> ~/Atelier/public/ls5/poo/correction/README
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/3/1/PanneauCarte.java
+	"	1	0
+
+> ~/Atelier/public/ls5/poo/3/1/FenetreCarte.java
+	"	24	0
+	.	5	0
+	+	11	0
+	+	5	0
+
+> ~/Atelier/public/ls5/poo/3/1/Case.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Listener/vue/PointVue.java
+	"	14	0
+
+> ~/poo/AEnvoyer/Listener/vue/VueGraphe.java
+	"	20	8
+
+> ~/poo/AEnvoyer/Listener/test/Test.java
+	"	12	0
+
+> ~/poo/AEnvoyer/Labyrinthe/affichage/PanneauLabyrinthe.java
+	"	1	2
+	.	3	0
+	+	3	0
+
+> ~/poo/AEnvoyer/Listener/modèle/PointModèle.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Listener/contrôleur/PointContrôleur.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Chateau/course/Salle.java
+	"	7	0
+
+> ~/poo/AEnvoyer/Chateau/course/Main.java
+	"	54	8
+	.	1	0
+	+	1	0
+
+> ~/poo/AEnvoyer/Chateau/course/Joueur.java
+	"	23	3
+
+> ~/poo/AEnvoyer/Chateau/course/Château.java
+	"	14	0
+
+> ~/poo/AEnvoyer/Labyrinthe/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/poo/AEnvoyer/Labyrinthe/NERD_tree_2
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/poo/AEnvoyer/Labyrinthe/affichage/FenêtreLabyrinthe.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Labyrinthe/astar/AStar.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Labyrinthe/laby/Labyrinthe.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Labyrinthe/main/Main.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Compte à rebours/Test.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Compte à rebours/CompteARebours.java
+	"	28	0
+
+> ~/poo/AEnvoyer/Chateau/Salle.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Chateau/Main.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Chateau/Joueur.java
+	"	1	0
+
+> ~/poo/AEnvoyer/Chateau/Château.java
+	"	18	23
+
+> ~/Atelier/public/ls5/bdd/projet/procedures
+	"	1	0
+	^	58	23
+	.	58	22
+	+	89	0
+	+	60	4
+	+	74	4
+	+	2	76
+	+	3	12
+	+	2	39
+	+	6	0
+	+	6	0
+	+	8	20
+	+	9	21
+	+	10	24
+	+	2	43
+	+	3	15
+	+	10	55
+	+	13	47
+	+	15	0
+	+	3	35
+	+	2	57
+	+	22	15
+	+	19	23
+	+	23	0
+	+	19	0
+	+	16	13
+	+	4	44
+	+	16	15
+	+	19	0
+	+	23	0
+	+	17	0
+	+	19	0
+	+	18	0
+	+	20	5
+	+	14	6
+	+	26	0
+	+	25	3
+	+	26	84
+	+	27	50
+	+	35	0
+	+	47	13
+	+	53	0
+	+	49	21
+	+	48	20
+	+	49	61
+	+	53	41
+	+	57	0
+	+	47	10
+	+	63	0
+	+	63	111
+	+	63	0
+	+	63	0
+	+	63	0
+	+	61	0
+	+	63	68
+	+	72	0
+	+	63	73
+	+	64	14
+	+	63	47
+	+	64	37
+	+	70	41
+	+	71	13
+	+	72	65
+	+	75	0
+	+	77	76
+	+	78	0
+	+	77	59
+	+	78	37
+	+	85	13
+	+	86	65
+	+	84	40
+	+	89	0
+	+	88	4
+	+	63	0
+	+	62	21
+	+	77	0
+	+	76	19
+	+	34	0
+	+	39	31
+	+	40	0
+	+	31	2
+	+	30	17
+	+	53	34
+	+	56	7
+	+	56	7
+	+	56	0
+	+	56	0
+	+	56	8
+	+	53	85
+	+	54	0
+	+	56	0
+	+	26	84
+	+	44	8
+	+	43	12
+	+	44	90
+	+	45	0
+	+	41	40
+	+	36	61
+	+	46	45
+	+	52	45
+	+	53	76
+	+	52	68
+	+	58	22
+
+> ~/Atelier/public/ls5/bdd/projet/modele_relationnel
+	"	1	0
+
+> ~/philippe_pittoli_TP3_1et2/README
+	"	1	0
